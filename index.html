@@ -102,7 +102,14 @@
         // Evento Click
         window.addEventListener('click', (e) => {
             // Cambiar texto al primer clic
-            document.getElementById('mensaje').innerText = "¡Feliz 14 de Febrero! 🌸";
+const mensaje = document.getElementById('mensaje');
+mensaje.innerText = "Intente hacer esto lo mejor que pude, no soy el mejor programador ni desarrollador, pero lo hice con todo mi corazón para este 14 de Febrero.\n\nGracias por aparecer en mi vida y nunca irte aun viendo lo raro que soy, te quiero mucho mi princesa chihuaha molletito de frijol.\n\nNo creas que me olvide de tu cumpleaños, pero eso es para dentro de otros dias.\n\nBesos y abrazos.\nChantilly";
+
+// Ajustar tamaño de letra para que quepa el mensaje largo
+mensaje.style.fontSize = "1.2rem"; 
+mensaje.style.lineHeight = "1.5";
+mensaje.style.maxWidth = "90%";
+mensaje.style.margin = "0 auto";
             
             // Crear flor en el click
             const colors = ['#ff69b4', '#ff1493', '#da70d6', '#ba55d3', '#ff0000']; // Rosas y rojos
@@ -121,4 +128,5 @@
         animate();
     </script>
 </body>
+
 </html>
